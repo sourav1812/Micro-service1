@@ -15,7 +15,6 @@ app.post("/events", (req, res) => {
     console.log("1", err.message);
   });
 
-  console.log("This is 2.0");
   // query
   axios.post("http://query-clusterip-srv:4002/events", events).catch((err) => {
     console.log("2", err.message);

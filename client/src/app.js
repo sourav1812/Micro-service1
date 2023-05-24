@@ -7,7 +7,7 @@ function App() {
   const [posts, setPosts] = useState([]);
   useEffect(() => {
     const call = async () => {
-      const { data: data } = await axios.get("http://localhost:4002/posts");
+      const { data: data } = await axios.get("http://posts.com/posts");
       console.log(data);
       setPosts(data);
     };
