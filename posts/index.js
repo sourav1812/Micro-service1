@@ -9,6 +9,10 @@ app.use(cors());
 
 const posts = {};
 
+app.get("/", (req, res) => {
+  res.send('Welcome to POSTS');
+});
+
 app.get("/posts", (req, res) => {
   res.send(posts);
 });
@@ -44,5 +48,5 @@ app.post("/events", (req, res) => {
 });
 
 app.listen(4000, () => {
-  console.log("server is running on port 4000");
+  console.log("server is running on port 4000!!");
 });
